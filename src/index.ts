@@ -13,13 +13,13 @@ interface DBEvent {
 
 //TODO: implement
 function createEventJson(event: DBEvent) {
-  const APPLICATION_ID = "asdfasdfasdfadf";
+  const APPLICATION_ID = 'asdfasdfasdfadf';
 
   return {
     title: `${event.title} yada yad yad`,
-    token: "",
-    message: "",
-    service: "",
+    token: '',
+    message: '',
+    service: '',
   };
 }
 
@@ -35,3 +35,5 @@ function handlePushNotifications() {
   });
   //3. for every usersWithEvents  send push with relavent events message
 }
+
+handlePushNotifications();
